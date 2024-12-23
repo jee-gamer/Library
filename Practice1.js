@@ -30,3 +30,12 @@ a_p.textContent = "ME TOO!";
 someDiv.appendChild(a_h1);
 someDiv.appendChild(a_p);
 container.appendChild(someDiv);
+
+const btn = document.querySelector('#btn');
+btn.onclick = () => alert('Hello World');
+
+const btn2 = document.querySelector('#btn2');
+btn2.addEventListener('click', function(e){
+    alert(e.target)
+    e.target.style.background = "blue";
+});
